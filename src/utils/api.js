@@ -1,5 +1,5 @@
 // src/utils/api.js
-const BASE_URL = "http://localhost:5000/api/invites";
+const BASE_URL = "https://premiumweddingcards.trato.in/api/invites";
 
 export async function createInvitation(data, token) {
   const res = await fetch(BASE_URL, {

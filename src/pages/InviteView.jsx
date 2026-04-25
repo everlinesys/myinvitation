@@ -8,7 +8,7 @@ export default function InviteView() {
     const [error, setError] = useState(false);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/api/invites/${slug}`)
+        fetch(`https://premiumweddingcards.trato.in/api/invites/${slug}`)
             .then((res) => {
                 if (!res.ok) throw new Error("Invite not found");
                 return res.json();
