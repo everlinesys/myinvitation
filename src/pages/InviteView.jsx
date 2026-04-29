@@ -2,13 +2,14 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { templates } from "../templates";
 import { buildWhatsAppMessage, shareWhatsApp } from "../utils/share";
+import WeddingLoader from "../hooks/WeddingLoader";
 export default function InviteView() {
     const { slug } = useParams();
     const [data, setData] = useState(null);
     const [error, setError] = useState(false);
 
     useEffect(() => {
-        fetch(`https://premiumweddingcards.trato.in/api/invites/${slug}`)
+        fetch(`${import.meta.env.VITE_API_BASE_URL}/api/invites/${slug}`)
             .then((res) => {
                 if (!res.ok) throw new Error("Invite not found");
                 return res.json();
@@ -35,8 +36,9 @@ export default function InviteView() {
         return (
             <div className="fixed inset-0 z-[100] bg-[#FDFCFB] flex items-center justify-center">
                 <div className="flex flex-col items-center gap-4">
-                    <div className="w-10 h-10 border-2 border-stone-200 border-t-rose-400 rounded-full animate-spin" />
-                    <p className="text-stone-400 font-serif italic tracking-widest">Unveiling...</p>
+                    {/* <div className="w-10 h-10 border-2 border-stone-200 border-t-rose-400 rounded-full animate-spin" />
+                    <p className="text-stone-400 font-serif italic tracking-widest">Unveiling...</p> */}
+                    <WeddingLoader />
                 </div>
             </div>
         );

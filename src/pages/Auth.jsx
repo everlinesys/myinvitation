@@ -19,7 +19,7 @@ export default function Auth() {
       const endpoint = isLogin ? "login" : "register";
 
       const res = await fetch(
-        `https://premiumweddingcards.trato.in/api/auth/${endpoint}`,
+        `${import.meta.env.VITE_API_BASE_URL}/api/auth/${endpoint}`,
         {
           method: "POST",
           headers: {
@@ -45,7 +45,7 @@ export default function Auth() {
 
       localStorage.setItem("token", data.token);
 
-      navigate("/editor", {
+      navigate("/home", {
         state: { restoredData: formData },
       });
 

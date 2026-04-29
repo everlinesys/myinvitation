@@ -30,19 +30,19 @@ export default function Header() {
 
         {/* Navigation */}
         <nav className="flex items-center gap-6 md:gap-8">
-          <Link 
+          {/* <Link 
             to="/editor" 
             className="text-sm font-medium text-stone-600 hover:text-rose-600 transition-colors"
           >
             Design Studio
-          </Link>
+          </Link> */}
 
           <div className="h-4 w-[1px] bg-stone-200 hidden sm:block" />
 
           {token ? (
             <div className="flex items-center gap-4">
               <Link 
-                to="/dashboard" 
+                to="/home" 
                 className="text-sm font-medium text-stone-600 hover:text-stone-900"
               >
                 My Invites

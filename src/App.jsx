@@ -5,9 +5,12 @@ import Home from "./pages/Home";
 import Editor from "./pages/Editor";
 import NotFound from "./pages/NotFound";
 import InviteView from "./pages/InviteView";
+import Dashboard from "./pages/Dashboard";
+import GuestInvite from "./pages/GuestInvite";
 // Layout
 import Header from "./components/layout/Header";
 import Auth from "./pages/Auth";
+import AdminHome from "./pages/AdminHome";
 
 export default function App() {
   return (
@@ -23,9 +26,13 @@ export default function App() {
             <Route path="/" element={<Home />} />
 
             <Route path="/login" element={<Auth />} />
+            <Route path="/home" element={<AdminHome />} />
             <Route path="/editor" element={<Editor />} />
-            <Route path="*" element={<NotFound />} />
+            <Route path="/dashboard/:id" element={<Dashboard />} />
             <Route path="/invite/:slug" element={<InviteView />} />
+            <Route path="/g/:slug" element={<GuestInvite />} />
+
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
 

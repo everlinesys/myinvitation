@@ -1,5 +1,5 @@
 export async function startPayment(userData, onSuccess) {
-  const res = await fetch("https://premiumweddingcards.trato.in/api/payment/create-order", {
+  const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/payment/create-order`, {
     method: "POST",
   });
 

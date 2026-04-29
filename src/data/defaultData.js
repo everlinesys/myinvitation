@@ -1,6 +1,6 @@
 export const defaultData = {
-  groom: "Arjun",
-  bride: "Meera",
+  groom: "George",
+  bride: "Ann Mary",
 
   groomParents: "",
   brideParents: "",

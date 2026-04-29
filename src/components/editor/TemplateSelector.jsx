@@ -2,17 +2,17 @@ import { templatesMeta } from "../../data/templatesMeta";
 
 export default function TemplateSelector({ selected, onChange }) {
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 p-2">
       <div className="flex items-center justify-between">
-        <h2 className="text-sm font-semibold text-stone-400 uppercase tracking-wider">
+        {/* <h2 className="text-sm font-semibold text-stone-400 uppercase tracking-wider">
           1. Select Style
-        </h2>
+        </h2> */}
         <span className="text-[10px] text-stone-400 font-medium px-2 py-0.5 bg-stone-100 rounded">
           {templatesMeta.length} Designs
         </span>
       </div>
 
-      <div className="flex gap-4 overflow-x-auto pb-4 custom-scrollbar snap-x">
+      <div className="flex gap-4 overflow-x-auto p-4 m-2 custom-scrollbar snap-x">
         {templatesMeta.map((t) => {
           const isSelected = selected === t.id;
           
