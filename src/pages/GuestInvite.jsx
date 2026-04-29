@@ -285,7 +285,7 @@ export default function GuestInvite() {
       {/* 💎 POPUP */}
       {/* 💎 MODERN ENTRY POPUP */}
       {showMusicPopup && (
-        <div className="fixed inset-0 z-[1000] flex items-center justify-center overflow-hidden">
+        <div className="fixed inset-0 z-[1000] flex items-center justify-center overflow-hidden animated fade-in">
           {/* Immersive Frosted Glass Backdrop */}
           <div className="absolute inset-0 bg-[#FDFBF8]/80 backdrop-blur-[20px]" />
 

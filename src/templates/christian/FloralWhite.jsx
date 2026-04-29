@@ -91,7 +91,7 @@ export default function FloralWhite({ data }) {
           Justin George
         </span>
         <span className="block mt-1">
-          ( S/o Late N.D. George (Ex. Municipal Chairman, Thrissur) & Late Mary George)
+          (S/o Late N.D. George (Ex. Municipal Chairman, Thrissur) & Late Mary George)
         </span> &
         <span className="block">
           Niji Justin (Thrissur Corporation Mayor)
@@ -115,7 +115,7 @@ export default function FloralWhite({ data }) {
 
       {/* BRIDE DETAILS */}
       <p className="text-[11px] text-stone-600 leading-relaxed px-2">
-        D/o Varghese Mangalath <br />
+        Beloved D/o Varghese Mangalath <br />
         (S/o Late Mangalath Varkey & Shoshamma) <br />
         & Binu Varghese <br />
         (D/o Avalakottil Paulose & Leelamma)
