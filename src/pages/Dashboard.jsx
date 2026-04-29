@@ -59,18 +59,18 @@ export default function Dashboard() {
     const text = `
 Dear ${guest.name},
 
-With immense joy and heartfelt love, we invite you to be a part of our special day 💍
+With immense joy and heartfelt love, we invite you to be a part of the special day of 💍
 
 ✨ *George & Ann Mary* ✨
 
-Your presence will mean the world to us as we begin this beautiful journey together.
+Your presence would mean the world to us as we begin this beautiful journey together.
 
 📅 *June 10, 2026*
 🕒 *3:00 PM*
-⛪ Lourde Metropolitan Church
+⛪ Our Lady of Lourdes Metropolitan Cathedral Thrissur
 
 🎉 Reception to follow at 6:00 PM  
-📍 Jeev’s Square Convention Centre
+📍 Jeev’s Square Convention Centre Pattikkad Thrissur
 
 Kindly view your invitation and let us know your presence:
 

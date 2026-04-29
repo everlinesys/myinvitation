@@ -1,5 +1,10 @@
 import { useEffect, useState } from "react";
-
+import { FaLocationArrow, FaMapMarked, FaMapPin } from "react-icons/fa";
+import {
+  MapPin,
+  Calendar,
+  Clock,
+} from "lucide-react";
 export default function FloralWhite({ data }) {
   const mapLink = data?.mapLink
     ? data.mapLink
@@ -72,28 +77,29 @@ export default function FloralWhite({ data }) {
 
       {/* SCRIPTURE */}
       <p className="text-[11px] italic text-stone-500 leading-relaxed">
-        “It is not good for man to be alone. I will make a helper suitable for him.”
+        “In the beginning the Creator made people male and female? For this reason a man will leave his father and mother and unite with his wife, and the two will become one. So they are no longer two, but one. Man must not separate, then, what God has joined together.”
         <br />
         <span className="text-[10px] uppercase tracking-widest">
-          Genesis 2:18
+          Matthew 19: 4-6
         </span>
       </p>
 
       {/* INVITE TEXT */}
       <p className="text-[11px] leading-relaxed text-stone-600">
         We,<br />
-        <span className="block mt-1">
-          S/o Late N.D. George (Thrissur Municipal Chairman) & Late Mary George
-        </span>
         <span className="block">
           Justin George
         </span>
-        <span className="block mt-2">
-          D/o Late Francis Thaliyath & Late Gracy Francis
-        </span>
+        <span className="block mt-1">
+          ( S/o Late N.D. George (Ex. Municipal Chairman, Thrissur) & Late Mary George)
+        </span> &
         <span className="block">
           Niji Justin (Thrissur Corporation Mayor)
         </span>
+        <span className="block mt-2">
+          (D/o Late Francis Thaliyath & Late Gracy Francis)
+        </span>
+
         <span className="block mt-3">
           cordially request your presence and blessings with family
           on the occasion of the wedding of our son
@@ -103,7 +109,7 @@ export default function FloralWhite({ data }) {
       {/* COUPLE */}
       <h1 className="text-3xl font-semibold text-stone-900 leading-tight mt-2">
         George
-        <span className="block text-lg text-rose-500 my-1">&</span>
+        <span className="block text-lg text-rose-500 my-1">with</span>
         Ann Mary
       </h1>
 
@@ -163,9 +169,15 @@ export default function FloralWhite({ data }) {
         <p className="text-[12px] text-stone-500">
           3:00 PM
         </p>
-        <p className="text-[12px]">
-          Lourde Metropolitan Church
-        </p>
+        <a target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block text-xs underline text-stone-600 "
+          href="https://maps.app.goo.gl/MEHkQgA92yJ2cACz6">
+          <p className="flex  gap-2">
+            <MapPin height={20} className="text-rose-500" />Our Lady of Lourdes Metropolitan Cathedral
+            Thrissur</p>
+        </a>
+
       </div>
 
       {/* RECEPTION */}
@@ -173,25 +185,22 @@ export default function FloralWhite({ data }) {
         <p className="text-[10px] uppercase tracking-widest text-rose-500">
           Reception
         </p>
-        <p className="text-[12px]">
-          Jeev’s Square Convention Centre
-        </p>
-        <p className="text-[11px] text-stone-500">
-          6:00 PM
-        </p>
-      </div>
-
-      {/* MAP */}
-      {mapLink && (
         <a
           href={mapLink}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block text-xs underline text-stone-600"
         >
-          📍 View Location
-        </a>
-      )}
+          <p className="flex  gap-2">
+            <MapPin height={20} className="text-rose-500" /> Jeev’s Square Convention Centre Pattikkad Thrissur
+          </p></a>
+        <p className="text-[11px] text-stone-500">
+          6:00 PM
+        </p>
+      </div>
+
+      {/* MAP */}
+
 
       {/* RSVP */}
       {/* <div className="mt-4 text-[10px] uppercase tracking-widest text-stone-500">
