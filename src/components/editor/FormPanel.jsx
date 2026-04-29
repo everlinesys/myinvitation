@@ -97,8 +97,8 @@ export default function FormPanel({ data, setData }) {
 
         <input
           className={`${inputStyle} mt-4`}
-          placeholder="Venue Address & City"
-          value={data.venue}
+          placeholder="Venue Address & City "
+          value={data.venue} 
           onChange={(e) => {
             const venue = e.target.value;
 
