@@ -178,7 +178,7 @@ We truly hope to celebrate this special moment with you and your family ❤️
         </div>
 
         {/* --- TABLE --- */}
-        <div className="bg-white rounded-3xl shadow-sm border border-stone-100 overflow-hidden">
+        <div className="bg-white rounded-3xl shadow-sm border border-stone-100 overflow-x-auto">
           <table className="w-full text-left">
             <thead>
               <tr className="bg-stone-50/50 border-b border-stone-100 text-[11px] uppercase tracking-widest text-stone-400">
