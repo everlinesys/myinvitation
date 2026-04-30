@@ -389,7 +389,7 @@ export default function GuestInvite() {
 
       {/* 🎵 audio */}
       <audio ref={audioRef} loop>
-        <source src="/music/wedding3.mp3" type="audio/mpeg" />
+        <source src="/music/wedding4.mp3" type="audio/mpeg" />
       </audio>
 
       {/* 💎 POPUP */}
