@@ -383,9 +383,9 @@ export default function GuestInvite() {
       </div>
 
       {/* Footer */}
-      <p className="mt-10 text-[9px] text-stone-300 uppercase tracking-[0.4em]">
+      <a href="/" className="mt-10 text-[9px] text-stone-300 uppercase tracking-[0.4em]">
         MyInvite
-      </p>
+      </a>
 
       {/* 🎵 audio */}
       <audio ref={audioRef} loop>

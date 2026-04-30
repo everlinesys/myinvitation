@@ -117,7 +117,7 @@ export default function FloralWhite({ data }) {
         Beloved D/o Varghese Mangalath <br />
         (S/o Late Mangalath Varkey & Shoshamma) <br />
         & Binu Varghese <br />
-        (D/o Avalakottil Paulose & Leelamma)
+        (D/o Late Avalakottil Paulose & Late Leelamma)
       </p>
 
       {/* COUNTDOWN */}
