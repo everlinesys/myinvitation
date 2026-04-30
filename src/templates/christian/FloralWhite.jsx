@@ -61,60 +61,59 @@ export default function FloralWhite({ data }) {
     return () => clearInterval(interval);
   }, []);
   return (
-    <div className="w-full w-[460px] max-w-[90vw] bg-[#FCFAF7] p-8 text-center font-serif text-stone-800 shadow-xl border border-stone-200 space-y-5">
+    <div className="w-full w-[460px] max-w-[90vw] bg-[#FCFAF7] p-8 text-center  text-stone-800 shadow-xl border border-stone-200 space-y-6 leading-relaxed">
 
       {/* ✝️ LOGO */}
       <img
         src="/images/patterns/aramaic.png"
-        className="mx-auto w-12 opacity-80"
+        className="mx-auto w-14 opacity-80"
         alt="Logo"
       />
 
       {/* INITIAL */}
-      <div className="text-lg tracking-[0.4em] text-stone-700">
+      <div className="text-base tracking-[0.35em] text-stone-700">
         G ✦ A
       </div>
 
       {/* SCRIPTURE */}
-      <p className="text-[11px] italic text-stone-500 leading-relaxed">
-        “In the beginning the Creator made people male and female? For this reason a man will leave his father and mother and unite with his wife, and the two will become one. So they are no longer two, but one. Man must not separate, then, what God has joined together.”
-        <br />
-        <span className="text-[10px] uppercase tracking-widest">
+      <p className="text-sm italic text-stone-500 leading-relaxed px-2">
+        “Have you not read that the one who made them at the beginning ‘made them male and female,’ and said, ‘For this reason a man shall leave his father and mother and be joined to his wife, and the two shall become one flesh’? So they are no longer two, but one flesh. Therefore what God has joined together, let no one separate."<br />
+        <span className="text-xs uppercase tracking-widest text-stone-400">
           Matthew 19: 4-6
         </span>
       </p>
 
       {/* INVITE TEXT */}
-      <p className="text-[11px] leading-relaxed text-stone-600">
+      <p className="text-sm leading-relaxed text-stone-600 px-2">
         We,<br />
-        <span className="block">
+        <span className="block font-medium">
           Justin George
         </span>
-        <span className="block mt-1">
-          (S/o Late N.D. George (Ex. Municipal Chairman, Thrissur) & Late Mary George)
+        <span className="block mt-1 text-xs text-stone-500 leading-relaxed">
+          (S/o Late N.D. George (Former Chairman , Municipal Council, Thrissur) & Late Mary George)
         </span> &
-        <span className="block">
-          Niji Justin (Thrissur Corporation Mayor)
+        <span className="block font-medium mt-2">
+          Niji Justin <br /> Mayor, Municipal Corporation, Thrissur 
         </span>
-        <span className="block mt-2">
+        <span className="block mt-1 text-xs text-stone-500 leading-relaxed">
           (D/o Late Francis Thaliyath & Late Gracy Francis)
         </span>
 
-        <span className="block mt-3">
+        <span className="block mt-4">
           cordially request your presence and blessings with family
           on the occasion of the wedding of our son
         </span>
       </p>
 
       {/* COUPLE */}
-      <h1 className="text-3xl font-semibold text-stone-900 leading-tight mt-2">
+      <h1 className="text-4xl font-semibold text-stone-900 leading-tight mt-2 fancy-font">
         George
-        <span className="block text-lg text-rose-500 my-1">with</span>
+        <span className="block text-lg text-rose-500 my-2">with</span>
         Ann Mary
       </h1>
 
       {/* BRIDE DETAILS */}
-      <p className="text-[11px] text-stone-600 leading-relaxed px-2">
+      <p className="text-sm text-stone-600 leading-relaxed px-3">
         Beloved D/o Varghese Mangalath <br />
         (S/o Late Mangalath Varkey & Shoshamma) <br />
         & Binu Varghese <br />
@@ -123,10 +122,11 @@ export default function FloralWhite({ data }) {
 
       {/* COUNTDOWN */}
       {timeLeft && (
-        <p className="text-[10px] uppercase tracking-widest text-stone-400">
+        <p className="text-xs uppercase tracking-widest text-stone-400">
           {timeLeft.days} days to go
         </p>
       )}
+
       {timeLeft ? (
         <div className="mt-6 flex justify-center gap-4">
 
@@ -139,12 +139,12 @@ export default function FloralWhite({ data }) {
             <div key={i} className="flex flex-col items-center">
 
               <div className="w-12 h-12 flex items-center justify-center rounded-full border border-rose-200 bg-white shadow-sm">
-                <span className="text-sm font-medium text-stone-700">
+                <span className="text-base font-medium text-stone-700">
                   {String(item.value).padStart(2, "0")}
                 </span>
               </div>
 
-              <span className="text-[9px] mt-1 uppercase tracking-widest text-stone-400">
+              <span className="text-[10px] mt-1 uppercase tracking-widest text-stone-400">
                 {item.label}
               </span>
 
@@ -153,67 +153,63 @@ export default function FloralWhite({ data }) {
 
         </div>
       ) : (
-        <p className="mt-4 text-[10px] uppercase tracking-widest text-rose-500">
+        <p className="mt-4 text-xs uppercase tracking-widest text-rose-500">
           Today is the Day ✨
         </p>
       )}
 
       {/* CEREMONY */}
-      <div className="space-y-1">
-        <p className="text-[10px] uppercase tracking-widest text-stone-400">
+      <div className="space-y-2">
+        <p className="text-xs uppercase tracking-widest text-stone-400">
           Wedding Ceremony
         </p>
-        <p className="text-sm font-medium">
+
+        <p className="text-base font-medium">
           June 10, 2026 • Wednesday
         </p>
-        <p className="text-[12px] text-stone-500">
+
+        <p className="text-sm text-stone-500">
           3:00 PM
         </p>
-        <a target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block text-xs underline text-stone-600 "
-          href="https://maps.app.goo.gl/MEHkQgA92yJ2cACz6">
-          <p className="flex  gap-2">
-            <MapPin height={20} className="text-rose-500" />Our Lady of Lourdes Metropolitan Cathedral
-            Thrissur</p>
-        </a>
 
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block text-sm underline text-stone-700"
+          href="https://maps.app.goo.gl/MEHkQgA92yJ2cACz6"
+        >
+          <p className="flex gap-2 justify-center">
+            <MapPin height={18} className="text-rose-500" />
+            Our Lady of Lourdes Metropolitan Cathedral Thrissur
+          </p>
+        </a>
       </div>
 
       {/* RECEPTION */}
-      <div className="space-y-1">
-        <p className="text-[10px] uppercase tracking-widest text-rose-500">
+      <div className="space-y-2">
+        <p className="text-xs uppercase tracking-widest text-rose-500">
           Reception
         </p>
+
         <a
           href={mapLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block text-xs underline text-stone-600"
+          className="inline-block text-sm underline text-stone-700"
         >
-          <p className="flex  gap-2">
-            <MapPin height={20} className="text-rose-500" /> Jeev’s Square Convention Centre Pattikkad Thrissur
-          </p></a>
-        <p className="text-[11px] text-stone-500">
+          <p className="flex gap-2 justify-center">
+            <MapPin height={18} className="text-rose-500" />
+            Jeev’s Square Convention Centre Pattikkad Thrissur
+          </p>
+        </a>
+
+        <p className="text-sm text-stone-500">
           6:00 PM
         </p>
       </div>
 
-      {/* MAP */}
-
-
-      {/* RSVP */}
-      {/* <div className="mt-4 text-[10px] uppercase tracking-widest text-stone-500">
-        Kindly RSVP
-      </div>
-
-      <p className="text-[11px] text-stone-600 leading-relaxed px-3">
-        Please confirm your presence and mention the number of guests
-        including yourself
-      </p> */}
-
       {/* FOOTER */}
-      <div className="text-[9px] text-stone-300 uppercase tracking-widest pt-2">
+      <div className="text-[10px] text-stone-300 uppercase tracking-widest pt-2">
         With Love
       </div>
 
