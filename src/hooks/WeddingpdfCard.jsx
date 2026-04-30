@@ -14,7 +14,7 @@ export default function WeddingPdfCard({ guestName }) {
                 width: "500px",
                 backgroundColor: "#FCFAF7",
                 color: primary,
-                padding: "60px 45px",
+                padding: "50px 45px",
                 fontFamily: "'Playfair Display', serif",
                 textAlign: "center",
                 border: `1px solid ${border}`,
@@ -28,7 +28,7 @@ export default function WeddingPdfCard({ guestName }) {
                 style={{
                     width: "50px",
                     display: "block",
-                    margin: "0 auto 25px auto",
+                    margin: "0 auto 20px auto",
                 }}
             />
 
@@ -96,10 +96,10 @@ export default function WeddingPdfCard({ guestName }) {
                     fontSize: "22px",
                     color: gold,
                     fontWeight: "500",
-                    marginBottom: "35px",
+                    marginBottom: "25px",
                 }}
             >
-                June 10, 2026
+                June 10, 2026 <br /> Wednesday
             </p>
 
             {/* EVENTS */}
