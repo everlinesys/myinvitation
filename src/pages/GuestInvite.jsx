@@ -273,7 +273,7 @@ export default function GuestInvite() {
               <div className="space-y-6 text-center">
 
                 <h3 className="font-serif text-lg text-stone-800">
-                  Would you be able to join us?
+                  Dear {data.guestName || "Guest"}, Would you be able to join us?
                 </h3>
 
                 {/* YES / NO */}
@@ -326,7 +326,7 @@ export default function GuestInvite() {
 
                     <button
                       onClick={() => submitRSVP("ACCEPTED")}
-                      className="w-full py-3 rounded-full bg-emerald-600 text-white text-sm hover:bg-emerald-700"
+                      className="w-full py-3 rounded-full bg-emerald-600 text-white text-sm hover:bg-emerald-700 animate-pulseScale"
                     >
                       Confirm
                     </button>
