@@ -54,7 +54,10 @@ export default function GuestInvite() {
         setData(res);
         setStatus(res.status || "PENDING");
         setAttendees(res.attendees || 1);
-
+        // 🔒 AUTO LOCK IF ALREADY RESPONDED
+        if (res.status && res.status !== "PENDING") {
+          setSubmitted(true);
+        }
         timer = setTimeout(() => {
           setLoading(false);
           setReady(true);

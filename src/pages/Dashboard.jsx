@@ -110,7 +110,39 @@ We truly hope to celebrate this special moment with you and your family ❤️
       <div className="animate-pulse text-stone-400 tracking-widest uppercase text-sm">Syncing Guestlist...</div>
     </div>
   );
+  const handleEdit = async (guest) => {
+    const newName = prompt("Edit name", guest.name);
+    if (!newName) return;
 
+    const newPhone = prompt("Edit phone", guest.phone || "");
+
+    try {
+      await fetch(`${API}/api/guests/manage/${guest.id}`, {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: newName,
+          phone: newPhone,
+        }),
+      });
+
+      loadData(); // 🔥 refresh
+    } catch {
+      alert("Update failed");
+    }
+  }; const handleDelete = async (guest) => {
+    if (!confirm(`Delete ${guest.name}?`)) return;
+
+    try {
+      await fetch(`${API}/api/guests/manage/${guest.id}`, {
+        method: "DELETE",
+      });
+
+      loadData(); // 🔥 refresh
+    } catch {
+      alert("Delete failed");
+    }
+  };
   const guests = data?.guests || [];
   const filteredGuests = guests.filter(g => g.name.toLowerCase().includes(searchTerm.toLowerCase()));
   const accepted = guests.filter(g => g.status === "ACCEPTED");
@@ -208,6 +240,21 @@ We truly hope to celebrate this special moment with you and your family ❤️
                   </td>
                   <td className="px-6 py-4">
                     <div className="flex justify-end gap-2">
+                      <button
+                        onClick={() => handleEdit(g)}
+                        className="p-2 text-blue-500 hover:bg-blue-50 rounded-lg transition"
+                        title="Edit"
+                      >
+                        ✏️
+                      </button>
+
+                      <button
+                        onClick={() => handleDelete(g)}
+                        className="p-2 text-rose-500 hover:bg-rose-50 rounded-lg transition"
+                        title="Delete"
+                      >
+                        🗑️
+                      </button>
                       <button onClick={() => copyLink(g.slug)} className="p-2 text-stone-400 hover:text-stone-900 hover:bg-stone-100 rounded-lg transition-all" title="Copy Link">
                         <Copy className="w-4 h-4" />
                       </button>
